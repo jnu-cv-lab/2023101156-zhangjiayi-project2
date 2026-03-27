@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug with LLDB",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/program",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                { "name": "DISPLAY", "value": ":0" },
+                { "name": "LD_LIBRARY_PATH", "value": "/usr/lib/x86_64-linux-gnu" }
+            ],
+            "console": "integratedTerminal",
+            "preLaunchTask": "build"
+        }
+    ]
+}
